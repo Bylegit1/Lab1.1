@@ -6,13 +6,15 @@
         {
             Console.WriteLine("Введите шестизначное число: ");
             var number = int.Parse(Console.ReadLine());
+
+            var result = "";
             if (number < 0)
             {
-                Console.WriteLine("Число является отрицательным");
+                result = "Число является отрицательным";
             }
             else if (number < 100000 || number > 999999)
             {
-                Console.WriteLine("Число не является шестизначным");
+                result = "Число не является шестизначным";
             }
             else
             {
@@ -28,13 +30,14 @@
 
                 if (firstSum == secondSum)
                 {
-                    Console.WriteLine("Число является счастливым");
+                    result = "Число является счастливым";
                 }
                 else
                 {
-                    Console.WriteLine("Число не является счастливым");
+                    result = "Число не является счастливым";
                 }
             }
+            Console.WriteLine(result);
         }
     }
 }
