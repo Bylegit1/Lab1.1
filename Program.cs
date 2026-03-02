@@ -37,6 +37,7 @@
                     result = "Число не является счастливым";
                 }
             }
+
             Console.WriteLine(result);
         }
     }
